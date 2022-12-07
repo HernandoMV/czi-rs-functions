@@ -9,10 +9,10 @@ on:
   pull_request:
 
 jobs:
-  linting:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: neuroinformatics-unit/actions/lint@main
+  # linting:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: neuroinformatics-unit/actions/lint@main
 
   manifest:
     name: Check Manifest
@@ -21,7 +21,7 @@ jobs:
       - uses: neuroinformatics-unit/actions/check_manifest@main
 
   test:
-    needs: [linting, manifest]
+    needs: [manifest]
     name: ${{ matrix.os }} py${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
