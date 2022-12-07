@@ -27,8 +27,8 @@ def get_core_names(file_names, core_name):
 
 def get_registered_slices_folder(reg_folder):
     """
-    Finds the folder where the slices are and returns it together with the resolution
-    of the registered slices
+    Finds the folder where the slices are and returns it together
+    with the resolution of the registered slices
     """
     # get the filelist
     list_in_dir = listdir(reg_folder)

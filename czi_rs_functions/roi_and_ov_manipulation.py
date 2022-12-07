@@ -8,10 +8,10 @@ from java.awt import Color, Font
 from ij.plugin.frame import RoiManager
 from ij.process import FloatProcessor, ImageConverter
 from ij import ImagePlus, IJ
-from os import path
-import sys
 
-sys.path.append(path.abspath(path.dirname(__file__)))
+# from os import path
+# import sys
+# sys.path.append(path.abspath(path.dirname(__file__)))
 from czi_rs_functions.image_manipulation import ARAcoords_of_point
 
 
