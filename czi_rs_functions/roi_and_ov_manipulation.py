@@ -122,6 +122,7 @@ def get_region_from_file(input_file, region_name, image, scale_factor):
     fp.erode()
     fp.dilate()
     fp.dilate()
+    fp.invert()
     imp.show()
     # get new roi from it
     IJ.run("Create Selection")
