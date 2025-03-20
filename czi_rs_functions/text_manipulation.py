@@ -58,7 +58,7 @@ def get_resolution_from_folder_name(reg_sl_folder):
 
 
 def get_registered_regions_path(regions_folder, slice_name):
-    regions_file_name = path.join(regions_folder, slice_name + ".tif_ch0.zip")
+    regions_file_name = path.join(regions_folder, slice_name + ".tif.zip")
     if not path.isfile(regions_file_name):
         print("Slice not registered or regions not saved!!!!!!")
     return regions_file_name
